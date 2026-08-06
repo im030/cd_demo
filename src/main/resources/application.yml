@@ -1,0 +1,21 @@
+coindesk:
+  api-url: https://kengp3.github.io/blog/coindesk.json
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+    # show-sql: true
+    defer-datasource-initialization: true
+
+  sql:
+    init:
+      mode: always
